@@ -140,3 +140,5 @@ C:\Users\USER\RiderProjects\BulkyWeb\BulkyWeb\obj\Release\net8.0\refint\BulkyWeb
 C:\Users\USER\RiderProjects\BulkyWeb\BulkyWeb\obj\Release\net8.0\BulkyWeb.pdb
 C:\Users\USER\RiderProjects\BulkyWeb\BulkyWeb\obj\Release\net8.0\BulkyWeb.genruntimeconfig.cache
 C:\Users\USER\RiderProjects\BulkyWeb\BulkyWeb\obj\Release\net8.0\ref\BulkyWeb.dll
+C:\Users\USER\RiderProjects\BulkyWeb\BulkyWeb\bin\Release\net8.0\BulkyWeb\appsettings.json
+C:\Users\USER\RiderProjects\BulkyWeb\BulkyWeb\obj\Release\net8.0\BulkyWeb.sourcelink.json

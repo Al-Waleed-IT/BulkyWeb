@@ -1,6 +1,7 @@
 C:\Users\USER\RiderProjects\BulkyWeb\BulkyWeb\bin\Release\net8.0\publish\BulkyWeb.exe
 C:\Users\USER\RiderProjects\BulkyWeb\BulkyWeb\bin\Release\net8.0\publish\appsettings.Development.json
 C:\Users\USER\RiderProjects\BulkyWeb\BulkyWeb\bin\Release\net8.0\publish\appsettings.json
+C:\Users\USER\RiderProjects\BulkyWeb\BulkyWeb\bin\Release\net8.0\publish\BulkyWeb\appsettings.json
 C:\Users\USER\RiderProjects\BulkyWeb\BulkyWeb\bin\Release\net8.0\publish\BulkyWeb.dll
 C:\Users\USER\RiderProjects\BulkyWeb\BulkyWeb\bin\Release\net8.0\publish\BulkyWeb.runtimeconfig.json
 C:\Users\USER\RiderProjects\BulkyWeb\BulkyWeb\bin\Release\net8.0\publish\BulkyWeb.pdb
