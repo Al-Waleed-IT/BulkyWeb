@@ -142,3 +142,5 @@ C:\Users\USER\RiderProjects\BulkyWeb\BulkyWeb\obj\Release\net8.0\BulkyWeb.genrun
 C:\Users\USER\RiderProjects\BulkyWeb\BulkyWeb\obj\Release\net8.0\ref\BulkyWeb.dll
 C:\Users\USER\RiderProjects\BulkyWeb\BulkyWeb\bin\Release\net8.0\BulkyWeb\appsettings.json
 C:\Users\USER\RiderProjects\BulkyWeb\BulkyWeb\obj\Release\net8.0\BulkyWeb.sourcelink.json
+C:\Users\USER\RiderProjects\BulkyWeb\BulkyWeb\bin\Release\net8.0\Bulky.DataAccess.dll
+C:\Users\USER\RiderProjects\BulkyWeb\BulkyWeb\bin\Release\net8.0\Bulky.DataAccess.pdb

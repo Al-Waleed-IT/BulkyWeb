@@ -49,4 +49,6 @@ C:\Users\USER\RiderProjects\BulkyWeb\BulkyWeb\bin\Release\net8.0\publish\runtime
 C:\Users\USER\RiderProjects\BulkyWeb\BulkyWeb\bin\Release\net8.0\publish\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\USER\RiderProjects\BulkyWeb\BulkyWeb\bin\Release\net8.0\publish\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\USER\RiderProjects\BulkyWeb\BulkyWeb\bin\Release\net8.0\publish\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\USER\RiderProjects\BulkyWeb\BulkyWeb\bin\Release\net8.0\publish\Bulky.DataAccess.dll
+C:\Users\USER\RiderProjects\BulkyWeb\BulkyWeb\bin\Release\net8.0\publish\Bulky.DataAccess.pdb
 C:\Users\USER\RiderProjects\BulkyWeb\BulkyWeb\bin\Release\net8.0\publish\BulkyWeb.deps.json

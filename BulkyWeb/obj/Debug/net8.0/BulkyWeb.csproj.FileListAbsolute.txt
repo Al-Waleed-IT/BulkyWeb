@@ -140,3 +140,7 @@ C:\Users\USER\RiderProjects\BulkyWeb\BulkyWeb\bin\Debug\net8.0\runtimes\win\lib\
 C:\Users\USER\RiderProjects\BulkyWeb\BulkyWeb\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\USER\RiderProjects\BulkyWeb\BulkyWeb\obj\Debug\net8.0\BulkyWeb.csproj.AssemblyReference.cache
 C:\Users\USER\RiderProjects\BulkyWeb\BulkyWeb\obj\Debug\net8.0\BulkyWeb.csproj.Up2Date
+C:\Users\USER\RiderProjects\BulkyWeb\BulkyWeb\bin\Debug\net8.0\BulkyWeb\appsettings.json
+C:\Users\USER\RiderProjects\BulkyWeb\BulkyWeb\bin\Debug\net8.0\Bulky.DataAccess.dll
+C:\Users\USER\RiderProjects\BulkyWeb\BulkyWeb\bin\Debug\net8.0\Bulky.DataAccess.pdb
+C:\Users\USER\RiderProjects\BulkyWeb\BulkyWeb\obj\Debug\net8.0\BulkyWeb.sourcelink.json
