@@ -2,9 +2,9 @@ using Bulky.Models;
 
 namespace BulkyWeb.Data.Repository;
 
-public interface IProductRepository : IRepository<Category>
+public interface IProductRepository : IRepository<Product>
 {
-    void Update(Product category);
+    void Update(Product product);
     void Save();
     
 }

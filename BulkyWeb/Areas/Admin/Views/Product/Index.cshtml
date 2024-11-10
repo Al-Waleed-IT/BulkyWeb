@@ -1,0 +1,49 @@
+@using BulkyWeb.Data
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model List<Bulky.Models.Product>
+
+@{
+ViewBag.Title = "Product List";
+Layout = "_Layout";
+}
+
+<partial name="_Notifications"/>
+
+<h2 class="mb-4">Product List</h2>
+<div class="mb-4">
+    <a class="btn btn-primary" asp-area="Admin" asp-controller="Product" asp-action="Create">
+        <i class="bi bi-file-plus"></i> Create Product
+    </a>
+</div>
+
+<table class="table table-bordered table-striped">
+    <thead>
+    <tr>
+        <th>Title</th>
+        <th>ISBN</th>
+        <th>Author</th>
+        <th>List Price</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    @foreach (var obj in Model)
+    {
+    <tr>
+        <td>@obj.Title</td>
+        <td>@obj.ISBN</td>
+        <td>@obj.Author</td>
+        <td>@obj.ListPrice</td>
+        <td>
+            <a asp-action="Edit" asp-route-id="@obj.Id" class="btn btn-sm btn-primary mx-4">
+                <i class="bi bi-pencil-square"></i> Edit
+            </a>
+            <a asp-action="Delete" asp-route-id="@obj.Id" class="btn btn-sm btn-danger mx-4">
+                <i class="bi bi-trash"></i> Delete
+            </a>
+        </td>
+    </tr>
+    }
+    </tbody>
+</table>

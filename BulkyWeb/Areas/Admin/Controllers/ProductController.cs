@@ -1,27 +1,28 @@
 using Bulky.Models;
-using BulkyWeb.Data;
+
 using BulkyWeb.Data.Repository;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BulkyWeb.Areas.Admin
 {
     [Area("Admin")]
-    public class CategoryController : Controller
+    public class ProductController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly String _componentTitle;
 
         // Inject IUnitOfWork instead of UnitOfWork for proper DI
-        public CategoryController(IUnitOfWork unitOfWork)
+        public ProductController(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
+            _componentTitle = "Product";
         }
 
         // GET
         public IActionResult Index()
         {
-            List<Category> categories = _unitOfWork.Category.GetAll().ToList();
-            return View(categories);
+            List<Product> obj = _unitOfWork.Product.GetAll().ToList();
+            return View(obj);
         }
 
         public IActionResult Create()
@@ -30,12 +31,12 @@ namespace BulkyWeb.Areas.Admin
         }
         
         [HttpPost]
-        public IActionResult Create(Category category)
+        public IActionResult Create(Product obj)
         {
             if (ModelState.IsValid)
             {
-                _unitOfWork.Category.Add(category);
-                _unitOfWork.Category.Save();
+                _unitOfWork.Product.Add(obj);
+                _unitOfWork.Product.Save();
                 TempData["Success"] = $"{_componentTitle} created successfully";
                 return RedirectToAction("Index");
             }
@@ -50,17 +51,17 @@ namespace BulkyWeb.Areas.Admin
                 return NotFound();
             }
             
-            Category category = _unitOfWork.Category.Get(x => x.Id == id);
+            Product category = _unitOfWork.Product.Get(x => x.Id == id);
             return View(category);
         }
         
         [HttpPost]
-        public IActionResult Edit(Category category)
+        public IActionResult Edit(Product obj)
         {
             if (ModelState.IsValid)
             {
-                _unitOfWork.Category.Update(category);
-                _unitOfWork.Category.Save();
+                _unitOfWork.Product.Update(obj);
+                _unitOfWork.Product.Save();
                 TempData["Success"] = $"{_componentTitle} updated successfully";
                 return RedirectToAction("Index");
             }
@@ -75,18 +76,18 @@ namespace BulkyWeb.Areas.Admin
                 return NotFound();
             }
             
-            Category category = _unitOfWork.Category.Get(x => x.Id == id);
-            return View(category);
+            Product obj = _unitOfWork.Product.Get(x => x.Id == id);
+            return View(obj);
         }
         
         [HttpPost, ActionName("Delete")]
         public IActionResult DeleteConfirmed(int id)
         {
-            Category category = _unitOfWork.Category.Get(x => x.Id == id);
-            if (category != null)
+            Product obj = _unitOfWork.Product.Get(x => x.Id == id);
+            if (obj != null)
             {
-                _unitOfWork.Category.Delete(category);
-                _unitOfWork.Category.Save();
+                _unitOfWork.Product.Delete(obj);
+                _unitOfWork.Product.Save();
                 TempData["Success"] = $"{_componentTitle} successfully deleted!";
                 return RedirectToAction("Index");
             }
