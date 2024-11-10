@@ -1,8 +1,8 @@
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
-namespace BulkyWeb.Data;
+
+namespace Bulky.Models;
 
 public class Category
 {

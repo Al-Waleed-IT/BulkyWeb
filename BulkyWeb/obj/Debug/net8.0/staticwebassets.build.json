@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "psEnVDLYX0ShW9VUydOoeh//8QKtHoMrFtxr4Sx8wSA=",
+  "Hash": "Q+G92ya5r50v7B3QooT5DuvunulW2vJpFrLtF9TLYh4=",
   "Source": "BulkyWeb",
   "BasePath": "_content/BulkyWeb",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\USER\\RiderProjects\\BulkyWeb\\BulkyWeb\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BulkyWeb.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\RiderProjects\\BulkyWeb\\BulkyWeb\\wwwroot\\.well-known\\acme-challenge\\x_M7X85YcHC6TkdDE6jQegrq-B9_GV8zDsKEiEIF-VI",
+      "SourceId": "BulkyWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\RiderProjects\\BulkyWeb\\BulkyWeb\\wwwroot\\",
+      "BasePath": "_content/BulkyWeb",
+      "RelativePath": ".well-known/acme-challenge/x_M7X85YcHC6TkdDE6jQegrq-B9_GV8zDsKEiEIF-VI",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\.well-known\\acme-challenge\\x_M7X85YcHC6TkdDE6jQegrq-B9_GV8zDsKEiEIF-VI"
     },
     {
       "Identity": "C:\\Users\\USER\\RiderProjects\\BulkyWeb\\BulkyWeb\\wwwroot\\css\\site.css",

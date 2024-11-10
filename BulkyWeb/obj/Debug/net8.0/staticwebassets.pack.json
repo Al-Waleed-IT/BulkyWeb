@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\BulkyWeb.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\USER\\RiderProjects\\BulkyWeb\\BulkyWeb\\wwwroot\\.well-known\\acme-challenge\\x_M7X85YcHC6TkdDE6jQegrq-B9_GV8zDsKEiEIF-VI",
+      "PackagePath": "staticwebassets\\.well-known\\acme-challenge"
+    },
+    {
       "Id": "C:\\Users\\USER\\RiderProjects\\BulkyWeb\\BulkyWeb\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

@@ -1,3 +1,5 @@
+using Bulky.Models;
+
 namespace BulkyWeb.Data.Repository;
 
 public interface ICategoryRepository : IRepository<Category>

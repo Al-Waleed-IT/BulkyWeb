@@ -1,17 +1,18 @@
-@model BulkyWeb.Data.Category
+@using BulkyWeb.Data
+@model Bulky.Models.Category
 
 @{
-    ViewBag.Title = "title";
+    ViewBag.Title = "Update Category";
     Layout = "_Layout";
 }
 
 
 
 
-<form method="post">
+<form method="post" asp-action="Edit" autocomplete="off">
     <div class="border p-3 mt-4">
-        <div class="row pb-2">
-            <h2>Create Category</h2>
+        <div class="row pb-2 mb-4">
+            <h2>Update Category</h2>
             <hr />
         </div>
         
@@ -28,14 +29,11 @@
         </div>
         
         <div class="row">
-            <div class="col-md-6"><button type="submit" class="btn btn-primary form-control" style="width: 150px;">Create</button></div>
-            <div class="col-md-6"><a class="btn btn-link form-control" asp-controller="Category" asp-action="Index">Back to List</a></div>
+            <div class="col-md-6"><button type="submit" class="btn btn-primary form-control" style="width: 150px;">Update</button></div>
+            <div class="col-md-6"><a class="btn btn-link form-control" asp-area="Admin" asp-controller="Category" asp-action="Index">Back to List</a></div>
         </div>
         
         
         
     </div>
 </form>
-
-
-

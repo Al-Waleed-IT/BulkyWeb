@@ -1,3 +1,4 @@
+using Bulky.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace BulkyWeb.Data;
@@ -11,7 +12,7 @@ public class ApplicationDbContext : DbContext
     }
     
     public DbSet<Category> Categories { get; set; }
-
+    public DbSet<Product> Products { get; set; }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         // Initial seed data
@@ -42,7 +43,7 @@ public class ApplicationDbContext : DbContext
         }
 
         modelBuilder.Entity<Category>().HasData(categories.ToArray());
-
+        modelBuilder.Entity<Product>();
         base.OnModelCreating(modelBuilder);
     }
 
