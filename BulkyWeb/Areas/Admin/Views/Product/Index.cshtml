@@ -11,7 +11,7 @@ Layout = "_Layout";
 
 <h2 class="mb-4">Product List</h2>
 <div class="mb-4">
-    <a class="btn btn-primary" asp-area="Admin" asp-controller="Product" asp-action="Create">
+    <a class="btn btn-primary" asp-area="Admin" asp-controller="Product" asp-action="Upsert">
         <i class="bi bi-file-plus"></i> Create Product
     </a>
 </div>
@@ -36,7 +36,7 @@ Layout = "_Layout";
         <td>@obj.Author</td>
         <td>@obj.ListPrice</td>
         <td>
-            <a asp-action="Edit" asp-route-id="@obj.Id" class="btn btn-sm btn-primary mx-4">
+            <a asp-action="Upsert" asp-route-id="@obj.Id" class="btn btn-sm btn-primary mx-4">
                 <i class="bi bi-pencil-square"></i> Edit
             </a>
             <a asp-action="Delete" asp-route-id="@obj.Id" class="btn btn-sm btn-danger mx-4">

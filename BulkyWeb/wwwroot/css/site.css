@@ -20,3 +20,10 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+hr {
+   margin-top: 0px; 
+   margin-bottom: 0px; 
+  border: 0;
+  border-top: 1px solid #f8f5f0;
+}
