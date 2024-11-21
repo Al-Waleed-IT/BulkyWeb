@@ -70,6 +70,8 @@ namespace BulkyWeb.Areas.Admin
                     {
                         file.CopyTo(fileStream);
                     }
+                    
+                    obj.Product.ImageUrl = @"/images/product/" + fileName;
                 }
                 _unitOfWork.Product.Add(obj.Product);
                 _unitOfWork.Product.Save();
