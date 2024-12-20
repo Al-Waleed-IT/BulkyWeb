@@ -30,20 +30,69 @@ Layout = "_Layout";
     <tbody>
     @foreach (var obj in Model)
     {
-    <tr>
-        <td>@obj.Title</td>
-        <td>@obj.ISBN</td>
-        <td>@obj.Author</td>
-        <td>@obj.ListPrice</td>
-        <td>
-            <a asp-action="Upsert" asp-route-id="@obj.Id" class="btn btn-sm btn-primary mx-4">
-                <i class="bi bi-pencil-square"></i> Edit
-            </a>
-            <a asp-action="Delete" asp-route-id="@obj.Id" class="btn btn-sm btn-danger mx-4">
-                <i class="bi bi-trash"></i> Delete
-            </a>
-        </td>
-    </tr>
+        <tr>
+            <td>@obj.Title</td>
+            <td>@obj.ISBN</td>
+            <td>@obj.Author</td>
+            <td>@obj.ListPrice</td>
+            <td>
+                <a asp-action="Upsert" asp-route-id="@obj.Id" class="btn btn-sm btn-primary mx-4">
+                    <i class="bi bi-pencil-square"></i> Edit
+                </a>
+                <a asp-action="Delete" asp-route-id="@obj.Id" class="btn btn-sm btn-danger mx-4">
+                    <i class="bi bi-trash"></i> Delete
+                </a>
+            </td>
+        </tr>
     }
     </tbody>
 </table>
+
+<table id="myTable" class="display" style="width:100%">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>ISBN</th>
+        <th>Author</th>
+        <th>Price</th>
+    </tr>
+    </thead>
+</table>
+
+@section Scripts
+{
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Initialize the DataTable with server-side processing
+            const dataTable = new DataTable("#myTable", {
+                serverSide: true,
+                processing: true,
+                ajax: {
+                    url: "http://ecom.runasp.net/Admin/Product/GetProducts",
+                    type: "GET",
+                    data: function (d) {
+                        // Custom parameters can be added here if needed
+                        d.extraParam = "customValue"; // Example of adding custom data
+                    }
+                },
+                columns: [
+                    { title: "ID", data: "id" },         // ID column
+                    { title: "Title", data: "title" },   // Title column
+                    { title: "ISBN", data: "isbn" },     // ISBN column
+                    { title: "Author", data: "author" }, // Author column
+                    { title: "Price", data: "price" }    // Price column
+                ],
+                paging: true,
+                searching: true,
+                ordering: true, // Enable column ordering
+                responsive: true,
+                language: {
+                    emptyTable: "No data available in the table"
+                }
+            });
+        });
+
+
+    </script>
+}
