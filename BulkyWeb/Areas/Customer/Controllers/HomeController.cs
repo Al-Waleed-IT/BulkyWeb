@@ -20,13 +20,14 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        IEnumerable<Product> productList = _unitOfWork.Product.GetAll();
+        IEnumerable<Product> productList = _unitOfWork.Product.GetAll(includeProperties: "Category");
         return View(productList);
     }
-    
+
     public IActionResult Details(int id)
     {
-        Product product = _unitOfWork.Product.Get(u => u.Id == id);
+        Product? product = _unitOfWork.Product.Get(u => u.Id == id, includeProperties: "Category");
+        if (product == null) return NotFound();
         return View(product);
     }
 

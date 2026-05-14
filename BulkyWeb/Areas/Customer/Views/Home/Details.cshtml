@@ -1,8 +1,65 @@
 @model Bulky.Models.Product
 
 @{
-    ViewBag.Title = "title";
+    ViewData["Title"] = Model.Title;
     Layout = "_Layout";
 }
 
-<h2>Detsils Page</h2>
+<div class="container py-4">
+    <div class="row g-4">
+        <div class="col-md-4 text-center">
+            <img src="@(string.IsNullOrEmpty(Model.ImageUrl) ? "https://fakeimg.pl/400x500" : Model.ImageUrl)"
+                 alt="@Model.Title"
+                 class="img-fluid rounded shadow"
+                 style="max-height:500px; object-fit:cover;" />
+        </div>
+
+        <div class="col-md-8">
+            <h2 class="fw-bold">@Model.Title</h2>
+            <p class="text-warning fs-5 mb-1">by <strong>@Model.Author</strong></p>
+            @if (Model.Category != null)
+            {
+                <span class="badge bg-secondary mb-3">@Model.Category.Name</span>
+            }
+            <p class="text-muted mb-1">ISBN: @Model.ISBN</p>
+
+            <hr />
+
+            <div class="mb-3">
+                @Html.Raw(Model.Description)
+            </div>
+
+            <hr />
+
+            <h5 class="mb-3">Pricing</h5>
+            <table class="table table-bordered w-auto">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Quantity</th>
+                        <th>Price per unit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1 – 50</td>
+                        <td>@Model.Price.ToString("c")</td>
+                    </tr>
+                    <tr>
+                        <td>51 – 100</td>
+                        <td>@Model.Price50.ToString("c")</td>
+                    </tr>
+                    <tr class="table-success">
+                        <td>100+</td>
+                        <td>@Model.Price100.ToString("c")</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="text-muted text-decoration-line-through">List price: @Model.ListPrice.ToString("c")</p>
+
+            <a asp-area="Customer" asp-controller="Home" asp-action="Index"
+               class="btn btn-outline-secondary mt-2">
+                <i class="bi bi-arrow-left"></i> Back to list
+            </a>
+        </div>
+    </div>
+</div>
